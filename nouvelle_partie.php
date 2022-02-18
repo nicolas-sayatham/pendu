@@ -2,7 +2,9 @@
 
 function nouvelle_partie()
 {
+    session_destroy();
     session_start();
+    header('Location: ./index.php?etat=jouer');
     $fichier = file("mots.txt");
 
     // Je choisi un mot au hasard -> array_rand
@@ -14,9 +16,9 @@ function nouvelle_partie()
     var_dump($motChoisi);
 
     $_SESSION['mot'] = $motChoisi;
-    
-    
-   
+
+
+
     var_dump($_SESSION['mot']);
 }
 
@@ -24,25 +26,10 @@ nouvelle_partie();
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+if (!empty($_SESSION)) {
+    header('location: pendu.php ');
+}
 
-<body>
-    <?php
-
-    if (!empty($_SESSION)) {
-        header('location: pendu.php');
-    }
-
-    ?>
-
-</body>
-
-</html>
+?>

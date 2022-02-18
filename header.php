@@ -1,14 +1,5 @@
-<?php
 
-if(empty($_SESSION))
-{
-    echo '<p>Bienvenue sur le jeu du PENDU</p>';
-    echo '<a href="nouvelle_partie.php">Commencer une nouvelle partie</a>';
-}
-    
-else
-{
-    echo '<a href="deconexion.php">Nouvelle partie</a>';
-    echo '<a href="index.php">Accueil</a>';
-
-}
+   <p>Le jeu du Pendu !</p>
+   <a href="nouvelle_partie.php">Nouvelle partie</a>
+   <a href="index.php">Accueil</a>
+   <a href="admin.php">Admin</a>

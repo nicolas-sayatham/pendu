@@ -7,3 +7,9 @@ timbres
 assistance
 dire
 maladie
+maison
+maison
+bureau
+chaise
+papa
+maison
