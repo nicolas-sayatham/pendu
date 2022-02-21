@@ -12,8 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 
-<!-- On garde le header et le footer car on utilise le même -->
-
 <body>
     <header>
         <?php include 'header.php' ?>

@@ -4,8 +4,9 @@ ob_start();
 ?>
 
 <form method="post">
-    <input name="mot" id="" type="text" placeholder=" Ajouter un mot" />
+    <input class="mot" name="mot" id="" type="text" placeholder=" Ajouter un mot" />
 </form>
+
 <div class="liste">
     <?php
     $lines = file("mots.txt");
@@ -23,6 +24,7 @@ ob_start();
     }
     ?>
 </div>
+
 <?php
 $content = ob_get_clean();
 require_once 'template.php';

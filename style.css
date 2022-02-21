@@ -30,16 +30,82 @@ body{
 form{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 10px;
     padding: 10px 18px;
-    height: 40px;
+    height: 100px;
 }
+
 input{
     text-align: center;
+}
+
+img{
+    max-height: 200px;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{  letter-spacing: 2px;
+    text-align: center;
+    font-size: 30px;
+}
+
+a{
+    text-align: center;
+    font-size: 30px;
+}
+
+                            /* Classes */
+
+
+.head{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .liste{
     color: black;
     text-align: center;
+    font-size: 30px;
+}
+
+.lettres{
+    height: 50px;
+    width: 40px;
     font-size: large;
+}
+
+.new{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new a:hover{
+    color: #888888;
+}
+
+.div-img{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-p{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mot{
+    height: 50px;
+    width: 150px;
 }
