@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$mots = ['pendu', 'perdu', 'victoire', 'toto', 'maison'];
+$mots = file("mots.txt");
 $alphabet = range('A', 'Z');
 if (isset($_GET['newgame'])) {
     session_destroy();

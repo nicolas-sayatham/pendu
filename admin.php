@@ -9,8 +9,8 @@ ob_start();
 
 <div class="liste">
     <?php
-    $lines = file("mots.txt");
-    foreach ($lines as $word) {
+    $listes = file("mots.txt");
+    foreach ($listes as $liste) {
         echo $word . "<br>";
     }
     if (isset($_POST['mot'])) {
