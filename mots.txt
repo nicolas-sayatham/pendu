@@ -1,7 +1,5 @@
 bonjour
 plateforme
-école
-pédagogie
 programmation
 web
 soupeur

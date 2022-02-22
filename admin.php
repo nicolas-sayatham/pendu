@@ -11,7 +11,7 @@ ob_start();
     <?php
     $listes = file("mots.txt");
     foreach ($listes as $liste) {
-        echo $word . "<br>";
+        echo $liste . "<br>";
     }
     if (isset($_POST['mot'])) {
         if (ctype_alpha($_POST['mot'])) {
